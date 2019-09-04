@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import app from './App.vue'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 import router from './router.js'
 import './lib/mui/css/mui.css'
 import './lib/mint/header/style.css'
@@ -13,6 +14,8 @@ import {Header, Swipe, SwipeItem} from 'mint-ui'
 // Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+
+Vue.use(VueResource)
 
 Vue.component(Header.name, Header)
 Vue.component(Swipe.name, Swipe)
